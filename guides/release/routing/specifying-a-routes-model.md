@@ -117,7 +117,7 @@ export default Route.extend({
 });
 ```
 
-Just like in the static data example, the results of an asynchronous request in the `model` hook can be used in the template:
+Just like in the static data example, the results of an asynchronous request in the `model` hook can be used in the template because the router will wait to load the this template until the async request as completed:
 
 ```handlebars {data-filename=app/templates/favorite-posts.hbs}
 {{#each this.model as |post|}}
