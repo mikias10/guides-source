@@ -45,7 +45,7 @@ and more
 
 ## Using the `model` hook
 
-To start, here's an example of returning static sample data from the `model` hook. This is helpful while you are doing the initial development of a new route:
+To start, here's an example of returning a simple array from the `model` hook. Even if we eventually plan to fetch this data over a network, starting with something simple makes initial development of a new route quick and easy.
 
 ```javascript {data-filename=app/routes/favorite-posts.js}
 import Route from '@ember/routing/route';
